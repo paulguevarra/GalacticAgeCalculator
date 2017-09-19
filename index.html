@@ -5,26 +5,67 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <title>Galactic Age Calculator</title>
   </head>
   <body>
-    <form id="user-age-form">
-      <label for="earthyears">Enter your birth date:</label>
-      <input id="earthyears" type="date">
-      <button type="submit">Submit</button>
-    </form>
-    <div class="solution">
-      <p>Age in Earth years: <span id="age"></span></p>
-      <p>Age in Earth seconds: <span id="secondsEarth"></span></p>
-      <p>You have <span id="earthLeft"></span> seconds left on Earth.</p>
-      <p>Age in Mercury seconds: <span id="secondsMercury"></span></p>
-      <p>You have <span id="mercuryLeft"></span> seconds left on Mercury.</p>
-      <p>Age in Venus seconds: <span id="secondsVenus"></span></p>
-      <p>You have <span id="venusLeft"></span> seconds left on Venus.</p>
-      <p>Age in Mars seconds: <span id="secondsMars"></span></p>
-      <p>You have <span id="marsLeft"></span> seconds left on Mars.</p>
-      <p>Age in Jupiter seconds: <span id="secondsJupiter"></span></p>
-      <p>You have <span id="jupiterLeft"></span> seconds left on Jupiter.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 well">
+          <h1>Galactic Age Calculator</h1>
+        </div>
+      </div>
+      <div id="formsheet">
+        <div class="row">
+          <div class="col-md-12 well">
+            <form id="user-age-form">
+              <label for="earthyears">Enter your birth date:</label>
+              <input id="earthyears" type="date">
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="solution">
+        <div class="row">
+          <div class="col-md-2 well">
+            <p><strong>Age in Earth years:</strong> <span id="age"></span></p>
+            <p><strong>Age in Earth seconds:</strong> <span id="secondsEarth"></span></p>
+            <p>You have <span id="earthLeft"></span> seconds left to live on Earth.</p>
+            <img class="planetImg" src="img/earth.jpg">
+          </div>
+          <div class="col-md-2 well">
+            <p><strong>Age in Mercury years:</strong> <span id="ageMercury"></span></p>
+            <p><strong>Age in Mercury seconds:</strong> <span id="secondsMercury"></span></p>
+            <p>You have <span id="mercuryLeft"></span> seconds left to live on Mercury.</p>
+            <img class="planetImg" src="img/mercury.jpg">
+          </div>
+          <div class="col-md-2 well">
+            <p><strong>Age in Venus years:</strong> <span id="ageVenus"></span></p>
+            <p><strong>Age in Venus seconds:</strong> <span id="secondsVenus"></span></p>
+            <p>You have <span id="venusLeft"></span> seconds left to live on Venus.</p>
+            <img class="planetImg" src="img/venus.jpg">
+          </div>
+          <div class="col-md-2 well">
+            <p><strong>Age in Mars years:</strong> <span id="ageMars"></span></p>
+            <p><strong>Age in Mars seconds:</strong> <span id="secondsMars"></span></p>
+            <p>You have <span id="marsLeft"></span> seconds left to live on Mars.</p>
+            <img class="planetImg" src="img/mars.jpg">
+          </div>
+          <div class="col-md-2 well">
+            <p><strong>Age in Jupiter years:</strong> <span id="ageJupiter"></span></p>
+            <p><strong>Age in Jupiter seconds:</strong> <span id="secondsJupiter"></span></p>
+            <p>You have <span id="jupiterLeft"></span> seconds left to live on Jupiter.</p>
+            <img class="planetImg" src="img/jupiter.jpg">
+          </div>
+          <div class="row">
+            <div class="col-md-12 well">
+              <p>Want to try another birthdate? Click on the button below to choose another date.</p>
+              <button class="btn btn-danger" onclick=location=URL>Choose New Date</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

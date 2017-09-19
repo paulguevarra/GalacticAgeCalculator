@@ -1,0 +1,33 @@
+body {
+    background: url("/img/galaxy.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    background-repeat: no-repeat;
+}
+
+#solution{
+  display: none;
+}
+
+.well {
+  border-style: solid;
+  border-color: red;
+  border-width: thick;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: grey;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.planetImg {
+  display: block;
+  margin: auto;
+  border-radius: 10%;
+  width: auto;
+  height: 100px;
+}

@@ -26,11 +26,10 @@ AgeToCalculate.prototype.toMercuryAge = function(ageInSeconds){
   return ((ageInSeconds / mercury)).toFixed(2);
 };
 
-// AgeToCalculate.prototype.toMercuryAgeYears = function(ageInSeconds){
-//   let yearsToSeconds = 31556952;
-//   const mercury = 0.24;
-//   return ((ageInSeconds / mercury)/yearsToSeconds).toFixed(2);
-// };
+AgeToCalculate.prototype.changeToYears = function(ageInSeconds){
+  let yearsToSeconds = 31556952;
+  return (ageInSeconds/yearsToSeconds).toFixed(2);
+};
 
 AgeToCalculate.prototype.toVenusAge = function(ageInSeconds){
   const mercury = 0.62;
