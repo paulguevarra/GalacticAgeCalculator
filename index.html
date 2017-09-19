@@ -9,10 +9,22 @@
   </head>
   <body>
     <form id="user-age-form">
-  <label for="earthyears">Enter a number:</label>
-  <input id="earthyears" type="number">
-  <button type="submit">Submit</button>
-</form>
-<ul id="solution"></ul>
+      <label for="earthyears">Enter your birth date:</label>
+      <input id="earthyears" type="date">
+      <button type="submit">Submit</button>
+    </form>
+    <div class="solution">
+      <p>Age in Earth years: <span id="age"></span></p>
+      <p>Age in Earth seconds: <span id="secondsEarth"></span></p>
+      <p>You have <span id="earthLeft"></span> seconds left on Earth.</p>
+      <p>Age in Mercury seconds: <span id="secondsMercury"></span></p>
+      <p>You have <span id="mercuryLeft"></span> seconds left on Mercury.</p>
+      <p>Age in Venus seconds: <span id="secondsVenus"></span></p>
+      <p>You have <span id="venusLeft"></span> seconds left on Venus.</p>
+      <p>Age in Mars seconds: <span id="secondsMars"></span></p>
+      <p>You have <span id="marsLeft"></span> seconds left on Mars.</p>
+      <p>Age in Jupiter seconds: <span id="secondsJupiter"></span></p>
+      <p>You have <span id="jupiterLeft"></span> seconds left on Jupiter.</p>
+    </div>
   </body>
 </html>
