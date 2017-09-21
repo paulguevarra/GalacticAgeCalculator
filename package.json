@@ -4,7 +4,7 @@
   "description": "calculate your age in different planets",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
